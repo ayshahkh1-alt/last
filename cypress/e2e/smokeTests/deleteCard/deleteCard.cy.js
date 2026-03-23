@@ -25,6 +25,9 @@ before(()=>{
 
 Given("The user navigates to the board",()=>{
     action.openBoard(boardUrl)
+   cy.screenshot("Board-FullPage", {
+        capture: "fullPage"
+    })
 })
 
 When("The user creates a new card",()=>{
